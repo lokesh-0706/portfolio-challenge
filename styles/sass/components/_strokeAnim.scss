@@ -1,0 +1,87 @@
+#logo {
+  animation: fill-anim 0.7s ease 3s forwards;
+  // width: 100%;
+  // height: 15em;
+  // z-index: 10;
+
+}
+
+#logo path:nth-child(1) {
+  fill:transparent;
+  stroke-dasharray: 1482.63818359375px;
+  stroke-dashoffset: 1482.63818359375px;
+}
+path:nth-child(1) {
+  animation: line-anim 1.5s 0.3s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
+}
+#logo path:nth-child(2) {
+  fill:transparent;
+  stroke-dasharray: 994.51806640625px;
+  stroke-dashoffset: 994.51806640625px;
+}
+path:nth-child(2) {
+  animation: line-anim 1.5s 0.6s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
+}
+#logo path:nth-child(3) {
+  fill:transparent;
+  stroke-dasharray: 1226.5263671875px;
+  stroke-dashoffset: 1226.5263671875px;
+}
+path:nth-child(3) {
+  animation: line-anim 1.5s 0.9s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
+}
+#logo path:nth-child(4) {
+  fill:transparent;
+  stroke-dasharray: 510.592041015625px;
+  stroke-dashoffset: 510.592041015625px;
+}
+path:nth-child(4) {
+  animation: line-anim 1.5s 1.2s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
+}
+#logo path:nth-child(5) {
+  fill:transparent;
+  stroke-dasharray: 1027.396484375px;
+  stroke-dashoffset: 1027.396484375px;
+}
+path:nth-child(5) {
+  animation: line-anim 1.5s 1.5s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
+}
+#logo path:nth-child(6) {
+  fill:transparent;
+  stroke-dasharray: 1117.6881103515625px;
+  stroke-dashoffset: 1117.6881103515625px;
+}
+path:nth-child(6) {
+  animation: line-anim 1.5s 1.8s ease forwards, str-ani 0.7s 3.2s ease forwards, fill-anim 1s 3s forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-anim {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: var(--headFontColor);
+  }
+}
+
+
+@keyframes str-ani {
+  to {
+    stroke-width: 3;
+  }
+}

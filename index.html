@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts and Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js" defer></script>
+    <script src="./scripts/splitting.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+        integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+        crossorigin="anonymous" defer></script>
+
+    <!-- <script src="./scripts/HorizontalScroll.js" defer></script> -->
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js" defer></script> -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Scripts -->
+    <script src="./scripts/script.js" defer></script>
+    <!-- <script src="./scripts/skillsCharts.js" defer></script> -->
+
+    <title>Manish</title>
+</head>
+
+<body>
+    <!-- locomotive scroll container -->
+    <div data-scroll-container>
+        <!-- Navbar -->
+        <div class="nav-wrapper" data-scroll-section>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./other-cool-stuff.html">Other cool stuff</a>
+                <a href="./contact.html">Reach out</a>
+            </nav>
+        </div>
+
+        <!-- Hello Section -->
+        <section id="hello" data-scroll-section>
+            <!-- <div class="text-content">
+                <span class="large emphasis">
+                    Hello
+                </span>
+                <br>
+                <span class="sub-large">
+                    I am Manish
+                </span>
+            </div>
+            <div class="webgl-container">
+                <canvas id="webgl"></canvas>
+            </div> -->
+            <div class="content">
+                <h1 id="hi" class="sub-large">Hi, I'm</h1>
+                <svg id="logo" width="1235" height="230" viewBox="0 0 1235 230" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M44.92 222H49.92V217V80.8934L110.434 201.672L111.817 204.432H114.904H133.912H136.994L138.379 201.679L199.184 80.8159V217V222H204.184H238.168H243.168V217V15.688V10.688H238.168H185.464H182.32L180.958 13.522L124.696 130.578L68.4345 13.522L67.0724 10.688H63.928H10.936H5.93604V15.688V217V222H10.936H44.92Z"
+                        stroke="#0644fd" stroke-width="10" />
+                    <path
+                        d="M311.288 222H314.55L315.864 219.015L334.71 176.208H428.986L447.832 219.015L449.146 222H452.408H488.696H496.363L493.272 214.984L404.568 13.6719L403.253 10.688H399.992H363.704H360.443L359.128 13.6719L270.424 214.984L267.333 222H275H311.288ZM352.941 134.816L381.848 69.2641L410.755 134.816H352.941Z"
+                        stroke="#0644fd" stroke-width="10" />
+                    <path
+                        d="M687.848 10.688H682.848V15.688V151.451L574.867 12.6183L573.365 10.688H570.92H536.936H531.936V15.688V217V222H536.936H570.92H575.92V217V84.712L681.019 220.066L682.52 222H684.968H721.832H726.832V217V15.688V10.688H721.832H687.848Z"
+                        stroke="#0644fd" stroke-width="10" />
+                    <path
+                        d="M764.936 10.688H759.936V15.688V217V222H764.936H798.92H803.92V217V15.688V10.688H798.92H764.936Z"
+                        stroke="#0644fd" stroke-width="10" />
+                    <path
+                        d="M834.675 183.563L831.584 187.281L835.196 190.495C860.459 212.973 889.566 224.304 922.328 224.304C944.694 224.304 963.289 218.598 977.64 206.743C992.06 194.831 999.328 179.198 999.328 160.264C999.328 141.575 993.702 126.666 981.754 116.446C970.537 106.69 954.123 99.4322 933.01 94.3487C922.824 91.8735 914.489 89.5148 907.966 87.2783C901.402 85.0278 896.958 82.9954 894.328 81.2521C889.431 77.8218 887.008 73.1596 887.008 66.664C887.008 59.9154 889.465 55.461 894.196 52.4503C899.52 49.0625 906.579 47.184 915.704 47.184C925.101 47.184 934.638 48.8088 944.336 52.1024C954.075 55.4098 961.478 59.5338 966.785 64.3265L970.964 68.101L974.217 63.5048L992.361 37.8728L995.031 34.1012L991.481 31.1429C981.735 23.021 970.226 16.7834 957.029 12.3846C943.867 7.99722 930.566 5.79199 917.144 5.79199C896.294 5.79199 878.396 11.1202 863.757 22.0459C848.895 33.0889 841.584 48.9692 841.584 68.968C841.584 88.6993 847.944 104.177 861.359 114.379C867.715 119.494 874.951 123.658 883.031 126.89L883.082 126.911L883.132 126.93C891.088 129.913 902.544 133.232 917.386 136.894L917.416 136.902L917.446 136.909C932.117 140.338 941.628 144.094 946.709 147.863L946.781 147.917L946.855 147.968C951.555 151.199 953.904 155.657 953.904 161.992C953.904 167.978 951.483 172.759 946.161 176.676C940.959 180.454 933.481 182.624 923.192 182.624C902.769 182.624 882.771 174.416 863.109 157.352L859.252 154.004L855.987 157.931L834.675 183.563Z"
+                        stroke="#0644fd" stroke-width="10" />
+                    <path
+                        d="M1051.94 217V222H1056.94H1090.92H1095.92V217V139.632H1185.86V217V222H1190.86H1224.84H1229.84V217V15.688V10.688H1224.84H1190.86H1185.86V15.688V97.952H1095.92V15.688V10.688H1090.92H1056.94H1051.94V15.688V217Z"
+                        stroke="#0644fd" stroke-width="10" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- Roles Section -->
+        <section id="roles" data-scroll-section>
+            <div class="text-content">
+                <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">UG, Applied Geology at <span
+                        class="emphasis">IIT Kharagpur</span></h1>
+                <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2"><span class="emphasis">Front
+                        End</span> Web Developer</h1>
+                <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">UI/UX <span
+                        class="emphasis">Designer</span></h1>
+            </div>
+        </section>
+
+        <section id="about" data-scroll-section>
+            <div class="about-me">
+                <div class="sub-sub-large">A little about me
+                    <hr>
+                </div>
+                <div class="about-me__text">Hi there! I am Manish! I am an Applied Geology undergraduate student
+                    currently studying in the Indian Institute of Technology(IIT), Kharagpur. I am mostly interested in
+                    Physics, specially astronomy and cosmology. Other than Physics, I love spending my time programming
+                    and learning about computers and mathematics, playing badminton and playing guitar, though I have
+                    just started learning so its more of learning guitar than playing. </div>
+            </div>
+            <div class="circle" data-splitting>
+                CREATIVE-WEB-DEVELOPER-
+            </div>
+        </section>
+
+        <section id="education" data-scroll-section data-scroll-section>
+            <div class="content">
+                <div class="sub-large emphasis">Education</div>
+                <hr>
+                <div class="ed">
+                    <div class="medium">Integrated M.Sc in Applied Geology</div>
+                    <div class="big-small">Dept. of Geology and Geophysics, IIT Kharagpur</div>
+                    <div class="small grey">2019 - 2024(expected)</div>
+                </div>
+                <div class="ed">
+                    <div class="medium">Higher Secondary Studies in Science</div>
+                    <div class="big-small">Kendriya Vidyalaya NEIST(RRL), Jorhat</div>
+                    <div class="small grey">2016 - 2018</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" data-scroll-section data-scroll-section>
+            <div class="content">
+                <div class="sub-large emphasis">Experiences</div>
+                <hr>
+                <div class="ed">
+                    <div class="medium">Integrated M.Sc in Applied Geology</div>
+                    <div class="big-small">Dept. of Geology and Geophysics, IIT Kharagpur</div>
+                    <div class="small grey">2019 - 2024(expected)</div>
+                </div>
+                <div class="ed">
+                    <div class="medium">Higher Secondary Studies in Science</div>
+                    <div class="big-small">Kendriya Vidyalaya NEIST(RRL), Jorhat</div>
+                    <div class="small grey">2016 - 2018</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="section" data-scroll data-scroll-section>
+            <div class="contents">
+                <div class="quote">
+                    <blockquote>
+                        “It is our <span class="emphasis">choices</span>, Harry, that show what we truly are, far more
+                        than our <span class="emphasis">abilities</span>.”
+                    </blockquote>
+                    <cite> - Albus Dumbledore</cite>
+                </div>
+                <div class="head large">Projects
+                    <hr>
+                </div>
+                <div class="projects-container">
+                    <div class="project project-1">
+                        <h1>title-1</h1>
+                    </div>
+                    <div class="project project-2">
+                        <h1>title-2</h1>
+                    </div>
+                    <div class="project project-3">
+                        <h1>title-3</h1>
+                    </div>
+                    <div class="project project-4">
+                        <h1>title-4</h1>
+                    </div>
+                    <div class="project project-5">
+                        <h1>title-5</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section" data-scroll-section>
+            <div class="contents">
+                <div class="head large">Skills
+                    <hr>
+                </div>
+            </div>
+            <div class="skills__container">
+                <div class="skill">
+                    <div class="medium">Front End Web Development</div>
+                    <div class="skill-list">
+                        <img src="./assets/logos/html5.svg" alt="HTML 5" id="html-logo" class="skill-logo" />
+                        <img src="./assets/logos/css3.svg" alt="CSS 3" id="css-logo" class="skill-logo" />
+                        <img src="./assets/logos/js.svg" alt="Javascript + ES6" id="js-logo" class="skill-logo" />
+                        <img src="./assets/logos/sass.svg" alt="SASS / SCSS" id="sass-logo" class="skill-logo" />
+                        <img src="./assets/logos/three.svg" alt="THREE JS" id="three-logo"
+                            class="skill-logo white-fill" />
+                        <img src="./assets/logos/react.svg" alt="REACT" id="react-logo" class="skill-logo" />
+                        <img src="./assets/logos/react-router.svg" alt="REACT ROUTER" id="react-router-logo"
+                            class="skill-logo" />
+                        <img src="./assets/logos/next-js.svg" alt="NEXT JS" id="next-js-logo"
+                            class="skill-logo white-fill" />
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="medium">Back End Web Development</div>
+                    <div class="skill-list">
+                        <img src="./assets/logos/node.svg" alt="NODE JS" id="node-js-logo" class="skill-logo" />
+                        <img src="./assets/logos/mongodb.svg" alt="MONGO DB" id="mongo-db-logo" class="skill-logo" />
+                        <img src="./assets/logos/express.svg" alt="EXPRESS" id="express-logo"
+                            class="skill-logo white-fill" />
+                        <img src="./assets/logos/axios.svg" alt="AXIOS" id="axios-js-logo" class="skill-logo" />
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="medium">Version Control and Devops</div>
+                    <div class="skill-list">
+                        <img src="./assets/logos/git.svg" alt="GIT" id="git-logo" class="skill-logo" />
+                        <img src="./assets/logos/github.svg" alt="GITHUB" id="github-logo"
+                            class="skill-logo white-fill" />
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="medium">UI/UX Design</div>
+                    <div class="skill-list">
+                        <img src="./assets/logos/figma.svg" alt="FIGMA" id="figma-logo" class="skill-logo" />
+                    </div>
+                </div>
+                <!-- <div class="skill">
+                     <div class="medium">Graphic Design</div>
+                 </div>
+                 <div class="skill">
+                     <div class="medium">Video Editing</div>
+                 </div> -->
+            </div>
+
+        </section>
+
+
+        <section class="section" id="resume" data-scroll-section></section>
+        <section class="section" id="other-cool-stuff" data-scroll-section></section>
+        <section class="section" id="contact" data-scroll-section></section>
+
+        <!-- <section id="pages" data-scroll-section>
+            <button class="back"><a href=""></a></button>
+            <button class="forw"><a href="./projects.html">Projects &rarr;</a></button>
+        </section> -->
+
+        <section id="footer" data-scroll-section>
+            <div class="grey">Made by Manish</div>
+        </section>
+    </div>
+
+</body>
+
+</html>

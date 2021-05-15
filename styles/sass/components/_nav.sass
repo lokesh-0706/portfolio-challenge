@@ -1,0 +1,46 @@
+.nav-wrapper
+    width: 100vw
+    position: absolute
+    top: 20px
+    left: 0
+    display: grid
+    place-items: center
+    // background: blue
+    z-index: 2
+
+    nav
+        width: 50vw
+        display: flex
+        // background: red
+        font-size: 1.4em
+        justify-content: space-between
+        padding: 20px
+
+        a
+            color: var(--lighterFontColor)
+            cursor: pointer
+
+            &::after
+                content: ''
+                display: block
+                width: 105%
+                transform: translateX(-2.5%)
+                height: 3px
+                background-color: var(--headFontColor)
+                position: relative
+                bottom: -2px
+                border-radius: 1px
+                //Scale from centre animation
+                transform: scaleX(0)
+                //Scale from left animation
+                // width: 0
+                transition: all .5s ease
+
+            &:hover
+                color: var(--fontColor)
+
+                &::after
+                    //Scale from centre animation
+                    transform: scaleX(1)
+                    //Scale from left animation
+                    // width: 105%

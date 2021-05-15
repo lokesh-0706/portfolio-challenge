@@ -1,0 +1,34 @@
+@import "buttonVariables"
+    
+.btn
+    width: var(--btnW)
+    height: var(--btnH)
+    background: var(--btnBg)
+    display: grid
+    place-items: center center
+
+    @mixin borderRad()
+        border-radius: var(--borderRadius)
+
+    @include borderRad
+
+    &:hover 
+        animation: glow var(--btnAnimDuration) linear infinite
+
+
+    &__inner
+        width: var(--btnInnerW)
+        height: var(--btnInnerH)
+        background-color: var(--btnInnerBg)
+        @include borderRad
+        font-family: var(--fontFam)
+        color: var(--fontColor)
+        text-align: center
+        font-size: 1.8em
+        display: grid
+        place-items: center center
+
+@keyframes glow
+    0%
+    100%
+        background-position: 250px

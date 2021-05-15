@@ -1,0 +1,49 @@
+#about
+    display: grid
+    place-items: center
+    grid-template-columns: 50% 50%
+    height: 60vh
+    margin-bottom: 20vh
+
+    .about-me
+
+        div
+            padding: 0 50px
+
+        .medium
+            font-size: 3em
+
+        &__text
+            margin-top: 40px
+            font-size: 1.6em
+
+    .circle
+        // width: 50vw
+        transform-style: preserve-3d
+        animation: anim 8s linear infinite
+
+        .char
+            position: absolute
+            font-family: monospace
+            top: 0
+            left: 0
+            background: transparent
+            color: white
+            font-size: 9em
+            padding: 5px 12px
+            border: none
+            border-top: 4px solid var(--headFontColor)
+            border-bottom: 4px solid var(--headFontColor)
+            transform-style: preserve-3d
+            transform-origin: center
+            transform: rotateY(calc(var(--char-index) * 15.7deg)) translateZ(250px)
+
+        .char:hover
+            color: var(--headFontColor)
+            text-shadow: 2px 2px 25px var(--headFontColor)
+
+    @keyframes anim
+        0%
+            transform: perspective(1000px) rotateY(360deg) rotateX(15deg)
+        100%
+            transform: perspective(1000px) rotateY(0deg) rotateX(15deg)
